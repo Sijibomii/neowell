@@ -1,0 +1,26 @@
+.preloader {
+    @extend %center;
+    @extend %cover;
+  
+    background: black;
+    color: $color-peach;
+    text-align: center;
+    z-index: z('preloader'); 
+    opacity: 1; 
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .preloader__text {
+    font-family: $font-primary;
+    font-size: 13rem;
+    color: $color-peach;
+    max-width: 70rem;
+    opacity: 1;
+  }
+  
+
+  
+  
+  
+  

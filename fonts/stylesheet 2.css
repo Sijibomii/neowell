@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericBlackItalic.woff2') format('woff2'),
+        url('FredericBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericBoldItalic.woff2') format('woff2'),
+        url('FredericBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericBold.woff2') format('woff2'),
+        url('FredericBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericBlack.woff2') format('woff2'),
+        url('FredericBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericRegularItalic.woff2') format('woff2'),
+        url('FredericRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frederic';
+    src: url('FredericRegular.woff2') format('woff2'),
+        url('FredericRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

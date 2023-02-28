@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SK Reykjavik Rounded';
+    src: url('SKReykjavikRounded-Regular.woff2') format('woff2'),
+        url('SKReykjavikRounded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

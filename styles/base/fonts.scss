@@ -1,0 +1,71 @@
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/SKReykjavikRounded-Regular.woff2') format('woff2'),
+        url('../fonts/SKReykjavikRounded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }   
+ 
+
+  @font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericBlackItalic.woff2') format('woff2'),
+        url('../fonts/FredericBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericBoldItalic.woff2') format('woff2'),
+        url('../fonts/FredericBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericBold.woff2') format('woff2'),
+        url('../fonts/FredericBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericBlack.woff2') format('woff2'),
+        url('../fonts/FredericBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericRegularItalic.woff2') format('woff2'),
+        url('../fonts/FredericRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FredericRegular.woff2') format('woff2'),
+        url('../fonts/FredericRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
