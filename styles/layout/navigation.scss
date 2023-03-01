@@ -14,7 +14,7 @@
     font-size: 0;
     height: 2rem;
     top: 1.7rem;
-    left: 2rem;
+    left: 4rem;
     pointer-events: auto;
     position: absolute;
     transition: opacity 0.4s ease;
@@ -42,7 +42,7 @@
   .navigation__list__item {
     pointer-events: auto;
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     top: 1.7rem;
     @include media('<tablet') {
         right: 3.5rem;

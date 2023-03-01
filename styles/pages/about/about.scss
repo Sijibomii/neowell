@@ -1,0 +1,41 @@
+.about{
+    max-height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+    .about__container{
+            display: grid;
+            grid-template-columns: repeat(12,8.33333%);
+            grid-template-rows: repeat(12,8.33333%);
+            grid-auto-flow: row dense;
+            // background-color: #E1DCDD;
+            height: 100%;
+            width: 100%;
+            .about__left {
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row: span 12;
+                figure{
+                    height: 100%;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        vertical-align: top;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        .about__right{
+            grid-column-start: 7;
+            grid-column-end: 13;
+            grid-row: span 12;
+            
+        }
+    }
+}

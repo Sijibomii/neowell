@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
@@ -58,12 +58,14 @@ module.exports = {
     }),
 
     // new ImageMinimizerPlugin({
-    //   minimizerOptions: {
-    //     plugins: [
-    //       ['gifsicle', { interlaced: true }],
-    //       ['jpegtran', { progressive: true }],
-    //       ['optipng', { optimizationLevel: 8 }]
-    //     ]
+    //   minimizer: {
+    //     options: {
+    //       plugins: [
+    //         ['gifsicle', { interlaced: true }],
+    //         ['jpegtran', { progressive: true }],
+    //         ['optipng', { optimizationLevel: 8 }]
+    //       ]
+    //     }
     //   }
     // }),
 
@@ -110,14 +112,14 @@ module.exports = {
         }
       },
 
-      {
-        test: /\.(jpe?g|png|gif|svg|webp)$/i,
-        use: [
-          {
-            loader: ImageMinimizerPlugin.loader
-          }
-        ]
-      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg|webp)$/i,
+      //   use: [
+      //     {
+      //       loader: ImageMinimizerPlugin.loader
+      //     }
+      //   ]
+      // },
 
       {
         test: /\.(glsl|frag|vert)$/,
