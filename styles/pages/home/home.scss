@@ -330,5 +330,48 @@
             }
         }
     }
+
+    .home__collections{
+        color: #fff;
+        height: 356rem;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        background: $color-primary;
+        .home__collections__wrapper {
+            position: relative;
+
+
+            .home__collections__gallery{
+                display: inline-block;
+                position: relative;
+                white-space: nowrap;
+
+                .home__collections__gallery__media{
+                    border-radius: 1rem;
+                    display: inline-block;
+                    font-size: 0;
+                    height: 52.7rem;
+                    overflow: hidden;
+                    pointer-events: auto;
+                    position: relative;
+                    transform: translateZ(0);
+                    vertical-align: top;
+                    width: 67rem;
+                    margin-right: 3rem;
+
+                    figure{
+                        height: 100%;
+                        left: 0;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
     
 }
