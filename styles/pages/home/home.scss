@@ -5,8 +5,8 @@
     top: 0;
     width: 100%;
     height: 100%;
+    
     .home__container__tablet {
-        
         height: 100vh;
         width: 100%;
         background-color: $color-primary;
@@ -333,7 +333,7 @@
 
     .home__collections{
         color: #fff;
-        height: 356rem;
+        height: 300rem;
         position: relative;
         text-align: center;
         overflow: hidden;
@@ -371,6 +371,205 @@
                     }
                 }
             }
+        }
+    }
+
+    .home__prices{
+        padding: 4rem;
+        position: relative;
+        background: $color-primary;
+        .home__prices__box{
+            border-radius: 1rem;
+            overflow: hidden;
+            position: relative;
+            transform: translateZ(0);
+
+            .home__prices__content{
+                padding: 7rem 6rem;
+                position: relative;
+                z-index: 2;
+                padding-bottom: 16rem;
+
+                h2{
+                    padding-bottom: 1.4rem;
+                    font-size: 0rem;
+                    span{
+                        font-size: 7rem;
+                    }
+                }
+
+                .home__prices__description{
+                    font-size: 1.4rem;
+                    margin-top: 3.5rem;
+                    max-width: 59rem;
+                }
+                .home__prices__list{
+                    font-size: 1.4rem;
+                    margin-top: 5rem;
+                    width: 71rem;
+
+                    .home__price__item{
+                        padding: 0.9rem 3rem;
+                        position: relative;
+                        .item__name{
+                            display: inline-block;
+                            width: 21rem;   
+                        }
+
+                        .item__collection__name{
+                            display: inline-block;
+                            width: 21rem;  
+                        }
+
+                        .item__collection__price{
+                            display: inline-block;
+                            width: 15rem;  
+                        }
+
+                        .shop__now__btn{
+                            border: 1px solid black;
+                            padding: 0.25rem 1rem;
+                        }
+                        .item__price__dash {
+                            border-bottom: 1px solid #000;
+                            bottom: 0;
+                            left: 0;
+                            position: absolute;
+                            // transform: scaleX(0);
+                            transform-origin: left;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            figure{
+                height: 100%;
+                left: 0;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    left: 0;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .home__footer{
+        // bottom: 0;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        line-height: 1;
+        padding: 7rem 3.8rem 6rem;
+        // position: absolute;
+        text-transform: uppercase;
+        transition: transform 1s ease;
+        width: 100%;
+
+        .footer__column{
+            width: 25%;
+            color: #fff;
+        }
+        .footer__column:first-of-type{
+            .footer__logo {
+                color: #fff;
+                display: block;
+                font-size: 4rem;
+                margin-right: auto;
+                transition: opacity .4s ease;
+            }
+        }
+
+        .footer__column:nth-of-type(2){
+            .footer__list {
+                display: flex;
+                flex-wrap: wrap;
+                .footer__list__item {
+                    margin-bottom: 1.5rem;
+                    width: 50%;
+                }
+            }
+        }
+
+        .footer__column:nth-of-type(3){
+            .footer__newsletter {
+                .footer__newsletter__title{
+                    margin-bottom: 1.5rem;
+                }
+                .footer__newsletter__box {
+                    display: inline-block;
+                    position: relative;
+                    .footer__newsletter__input {
+                        background: none;
+                        border-radius: 0;
+                        border: solid;
+                        border-width: 0 0 1px;
+                        color: currentColor;
+                        font: inherit;
+                        padding: 0 0 1rem;
+                        pointer-events: auto;
+                        transition: opacity .4s ease,visibility .4s ease;
+                        width: 22rem;
+                    }
+                    .footer__newsletter__button {
+                        opacity: .8;
+                        position: absolute;
+                        right: 0;
+                        stroke: currentColor;
+                        top: 0.2rem;
+                        transition: opacity .4s ease,visibility .4s ease;
+                        .footer__newsletter__icon {
+                            height: 1.2rem;
+                            opacity: .8;
+                            stroke: currentColor;
+                            width: 1.2rem;
+                        }
+                    }
+
+                }
+            }
+        }
+
+         .footer__column:nth-of-type(4){
+            .footer__social{
+                .footer__social__title{
+                    margin-bottom: 2rem;
+                }
+    
+                .footer__social__media__list{
+                    align-items: center;
+                    display: flex;
+                    fill: #fff;
+                    .footer__social__item {
+                        opacity: .5;
+                        pointer-events: auto;
+                        transition: opacity .4s ease;
+                        .footer__social__link{
+                            color: #fff;
+                           
+                        }
+                    }
+                    .footer__social__item:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            
+        }
+        .footer__column:nth-child(5), .footer__column:nth-child(6), .footer__column:nth-child(7) {
+            margin-top: 15rem;
         }
     }
     

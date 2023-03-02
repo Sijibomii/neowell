@@ -7,9 +7,11 @@
 
 html {
   color: 'black';
+  background-color: black;
   font-size: calc(100vw / 1920 * 10);
   line-height: 1;
   height: auto;
+  overflow-x: hidden;
  
   @include media('<phone') {
     font-size: calc(100vw / 750 * 10);
@@ -27,6 +29,39 @@ body {
   width: 100%;
   
   
+}
+
+.navigation--open .home {
+  background: #141414;
+  border-radius: 1rem;
+  transform: translateX(86.5rem);
+  top: 10rem;
+  height: calc(100% - 10rem);
+
+  .home__wrapper{
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+}
+
+.navigation--open .side__menu{
+  visibility: visible;
+}
+
+
+.navigation--open .navigation {
+  color: white;
+  .navigation__link{
+    .open{
+      display: none;
+    }
+    .close{
+      display: block;
+    }
+  }
+  .navigation__list__item {
+    top: 3rem;
+  }
 }
 
 a {

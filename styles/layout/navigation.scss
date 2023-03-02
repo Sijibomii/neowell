@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    height: 8.5rem;
   }
   
   .navigation__link {
@@ -19,6 +20,10 @@
     position: absolute;
     transition: opacity 0.4s ease;
     width: 12.8rem;
+
+    .close{
+      display: none;
+    }
   
     @include media('<tablet') {
         left: 3.5rem;
@@ -61,4 +66,45 @@
         font-size: 2.2rem;
     }
   }
+
+.side__menu{
+  background-color: black;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: visibility 1.2s;
+  visibility: hidden;
+  z-index: 5;
+
+  .side__menu__box {
+    color: #fff;
+    left: 0;
+    top: 0;
+    width: 62.3rem;
+    z-index: 1;
+    .side__menu__list {
+      display: flex;
+      flex-direction: column;
+      font-size: 11rem;
+      height: 100%;
+      justify-content: center;
+      line-height: 1;
+      padding-bottom: 15rem;
+      padding-left: 4rem;
+      .side__menu__list__item {
+        margin-bottom: 3rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+  }
+}
+
+  .side__menu__box , .side__menu__box :before {
+    height: 100%;
+    position: absolute;
+  }
+
+
+} 
   
