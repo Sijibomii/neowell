@@ -1,5 +1,5 @@
 {
-  "name": "porche",
+  "name": "neowell",
   "version": "1.0.0",
   "scripts": {
     "backend:build": "node app.js",
